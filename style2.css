@@ -1,0 +1,160 @@
+:root {
+    --blanc: hsl(0, 0%, 100%);
+    --gris_clar: hsl(217, 12%, 63%);
+    --gris_fosc: hsl(216, 12%, 54%);
+    --blau: hsl(213, 19%, 18%);
+    --blau_fosc: hsl(216, 12%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+
+body {
+    
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+
+@media(max-width:428px){
+    body{
+        max-width: 92%;
+    }
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: var(--blanc);
+    
+}
+
+
+.hero {
+   
+    background-color: var(--blau_fosc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 101rem;
+    height: 41rem;
+    top: 99px;
+    left: 160px;
+
+}
+@media(min-width: 480px){
+    .hero {
+        width:auto;
+        left: -8px;
+    }
+}
+@media(max-width:428px){
+    .hero{
+        margin-left:-147px;
+    }
+}
+
+
+.container-hero {
+
+    
+    
+    background-color: var(--blau); 
+    position:absolute;
+    width: 34rem;
+    height: 31rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding-left: 10px;
+    padding-right: 12px;
+}
+@media(max-width: 480px){
+    .container-hero {
+        width:auto;
+        margin-left:-292px;
+        
+}
+    }
+
+@media(max-width:428px){
+    .container-hero{
+        margin-right: -299px;
+    }
+}
+
+
+
+
+
+.container-hero >p {
+
+    
+    color: var(--gris_clar);
+    margin-left: 151px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    word-spacing: 1px;
+    width: 442px;
+    margin-right: 122px;        
+    margin-top: 20px;
+    text-align: center;
+}
+
+#texto {
+    width: 408px;
+}
+
+
+.thank-you {
+        
+    height: 8rem;
+    padding-top: 50px;
+    padding-right: 26px;
+    
+}
+
+#oneto5 {
+    
+    background-color: hsl(212.7, 10.1%, 21.4%);
+    color: hsl(25, 97%, 53%);
+    height: 40px;
+    display: flex;
+    width: 219px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    margin: 58px 151px 40px auto;
+    border-radius: 26px;
+    font-size: 16px;
+    word-spacing: 0px;
+}
+
+@media(max-width:428px){
+    #oneto5{
+        margin-right: 65px;
+    }
+}
+
+
+footer {
+    padding-top: 528px;
+    color: white;
+    
+}
+
+footer a {
+    color:rgb(245, 12, 214);
+}
